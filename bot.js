@@ -1,5 +1,8 @@
+require('dotenv').config();
 const TelegramBot = require('node-telegram-bot-api');
-const token = '8518736211:AAGvURtuAzUZfyqqcs7rAW1H4XhNX-hUVzo';
+
+// Lấy token từ file .env
+const token = process.env.BOT_TOKEN;
 const bot = new TelegramBot(token, { polling: true });
 
 // Tin nhắn chào mừng tự động khi có người mới join
@@ -49,6 +52,68 @@ bot.on('callback_query', (callbackQuery) => {
     });
   }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
